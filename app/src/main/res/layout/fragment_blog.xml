@@ -12,7 +12,7 @@
         android:layout_height="match_parent"
         android:id="@+id/BlogRecycler"
         android:padding="5dp"
-        tools:itemCount="20"
+
         tools:listitem="@layout/postcard"
         >
 

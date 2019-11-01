@@ -1,6 +1,7 @@
 package com.freshly_built.ravi.feedpost.Java;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,6 +23,7 @@ public class BlogAdapter extends RecyclerView.Adapter
 
     public BlogAdapter( ArrayList<blogViewModel> mlist,Context context)
     {
+        Log.d("Adap", "in the blog adapter");
         this.dataset= mlist;
         this.mcontext=context;
     }
@@ -59,6 +61,7 @@ public class BlogAdapter extends RecyclerView.Adapter
     @Override
     public int getItemCount()
     {
+        Log.v("R2",""+dataset.size());
         return dataset.size();
     }
 }
